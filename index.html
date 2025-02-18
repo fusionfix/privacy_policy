@@ -6,11 +6,11 @@
     <title>Privacy Policy - Multilingual AI Translate</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Maintain previous styling */
         :root {
-            --primary: #2563eb;
-            --secondary: #7c3aed;
-            --accent: #f59e0b;
+            --primary: #1a1a1a;
+            --secondary: #2d2d2d;
+            --accent: #00ff88;
+            --text: #e0e0e0;
         }
 
         body {
@@ -18,24 +18,23 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            color: #334155;
+            background: #121212;
+            color: var(--text);
         }
 
         .container {
             max-width: 800px;
             margin: 40px auto;
-            background: #ffffff;
+            background: var(--primary);
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         h2 {
             text-align: center;
-            color: var(--primary);
+            color: var(--accent);
             font-size: 2.5rem;
             margin-bottom: 30px;
             position: relative;
@@ -50,12 +49,12 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            background: linear-gradient(90deg, var(--accent), rgba(0, 255, 136, 0.5));
             border-radius: 2px;
         }
 
         h3 {
-            color: var(--secondary);
+            color: var(--accent);
             font-size: 1.6rem;
             margin-top: 30px;
             margin-bottom: 15px;
@@ -72,6 +71,7 @@
             margin-bottom: 12px;
             padding-left: 15px;
             position: relative;
+            color: #d0d0d0;
         }
 
         ul li::before {
@@ -83,7 +83,7 @@
         }
 
         .contact-section {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: var(--secondary);
             color: white;
             padding: 30px;
             border-radius: 12px;
@@ -91,10 +91,12 @@
             position: relative;
             overflow: hidden;
             transition: transform 0.3s ease;
+            border: 1px solid rgba(0, 255, 136, 0.2);
         }
 
         .contact-section:hover {
             transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
         }
 
         .contact-section::before {
@@ -104,11 +106,11 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            background: radial-gradient(circle, rgba(0,255,136,0.1) 0%, rgba(0,255,136,0) 70%);
         }
 
         .contact-section h3 {
-            color: white;
+            color: var(--accent);
             border-left: none;
             padding-left: 0;
             font-size: 1.8rem;
@@ -119,7 +121,7 @@
         }
 
         .contact-section a {
-            color: #ffd700;
+            color: var(--accent);
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -128,13 +130,12 @@
             gap: 8px;
             padding: 8px 16px;
             border-radius: 6px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 255, 136, 0.1);
         }
 
         .contact-section a:hover {
-            color: white;
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateX(5px);
+            background: rgba(0, 255, 136, 0.2);
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
         }
 
         .nested-list {
@@ -144,7 +145,7 @@
 
         .nested-list li::before {
             content: '◦';
-            color: #94a3b8;
+            color: #707070;
         }
 
         @media (max-width: 768px) {
@@ -152,11 +153,11 @@
                 padding: 25px;
                 margin: 20px;
             }
-
+            
             h2 {
                 font-size: 2rem;
             }
-
+            
             h3 {
                 font-size: 1.4rem;
             }
@@ -165,6 +166,7 @@
 </head>
 <body>
 <div class="container">
+   <div class="container">
     <h2>Privacy Policy</h2>
 
     <h3>1. Introduction</h3>
@@ -249,11 +251,18 @@
             Contact Us
         </h3>
         <p>For data requests or questions:</p>
-        <a href="mailto:info.fusionfix@gmail.com">
+    
+    <div class="contact-section">
+        <h3>
+            <i class="fas fa-comments"></i>
+            Contact Us
+        </h3>
+        <p>For data requests or questions:</p>
+        <a href="mailto:fusionfixsupport@gmail.com">
             <i class="fas fa-envelope"></i>
-            info.fusionfix@gmail.com
+            fusionfixsupport@gmail.com
         </a>
-<!--        <p style="margin-top:15px;">Last Updated: [Insert Date]</p>-->
+        <p style="margin-top:15px; color: #888;">Last Updated: [Insert Date]</p>
     </div>
 </div>
 </body>
