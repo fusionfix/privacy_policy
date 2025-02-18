@@ -4,266 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Multilingual AI Translate</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #1a1a1a;
-            --secondary: #2d2d2d;
-            --accent: #00ff88;
-            --text: #e0e0e0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background: #121212;
-            color: var(--text);
+            background: #0a0a0a;
+            color: #e0e0e0;
+            padding: 2rem;
         }
 
         .container {
             max-width: 800px;
-            margin: 40px auto;
-            background: var(--primary);
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 0 auto;
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #00ff88;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .policy-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #252525;
+            border-radius: 8px;
+            border-left: 4px solid #00ff88;
         }
 
         h2 {
-            text-align: center;
-            color: var(--accent);
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), rgba(0, 255, 136, 0.5));
-            border-radius: 2px;
-        }
-
-        h3 {
-            color: var(--accent);
-            font-size: 1.6rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-left: 15px;
-            border-left: 4px solid var(--accent);
+            color: #00ff88;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
         }
 
         ul {
-            padding: 0;
-            margin-left: 25px;
+            list-style: none;
+            padding-left: 1.2rem;
         }
 
-        ul li {
-            margin-bottom: 12px;
-            padding-left: 15px;
+        li {
+            margin: 1rem 0;
             position: relative;
             color: #d0d0d0;
+            padding-left: 1rem;
         }
 
-        ul li::before {
-            content: '•';
-            color: var(--accent);
+        li:before {
+            content: "•";
+            color: #00ff88;
             position: absolute;
-            left: -10px;
-            font-weight: bold;
+            left: 0;
         }
 
         .contact-section {
-            background: var(--secondary);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-top: 40px;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            border: 1px solid rgba(0, 255, 136, 0.2);
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #252525;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #333;
         }
 
-        .contact-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
-        }
-
-        .contact-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0,255,136,0.1) 0%, rgba(0,255,136,0) 70%);
-        }
-
-        .contact-section h3 {
-            color: var(--accent);
-            border-left: none;
-            padding-left: 0;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .contact-section a {
-            color: var(--accent);
+        .email-link {
+            display: inline-block;
+            color: #00ff88 !important;
             text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
+            font-weight: 500;
+            margin: 1rem 0;
+            padding: 0.8rem 2rem;
+            border: 2px solid #00ff88;
             border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
             background: rgba(0, 255, 136, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 255, 136, 0.2);
         }
 
-        .contact-section a:hover {
-            background: rgba(0, 255, 136, 0.2);
-            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-        }
-
-        .nested-list {
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-
-        .nested-list li::before {
-            content: '◦';
-            color: #707070;
+        .sub-list {
+            margin: 0.5rem 0 0 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #333;
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 25px;
-                margin: 20px;
-            }
-            
-            h2 {
-                font-size: 2rem;
-            }
-            
-            h3 {
-                font-size: 1.4rem;
-            }
+            body { padding: 1rem; }
+            .container { padding: 1.5rem; }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
-<div class="container">
-   <div class="container">
-    <h2>Privacy Policy</h2>
+    <div class="container">
+        <h1>Privacy Policy</h1>
 
-    <h3>1. Introduction</h3>
-    <ul>
-        <li>Multilingual AI Translate ("App") provides translation services through subscriptions and ad-supported access.</li>
-        <li>We comply with Google Play Developer Policies and all applicable privacy laws (GDPR, CCPA, COPPA).</li>
-    </ul>
-
-    <h3>2. Data Collection & Use</h3>
-    <ul>
-        <li><strong>Processed Data:</strong>
-            <ul class="nested-list">
-                <li>Translation inputs (processed in real-time, not stored)</li>
-                <li>Device information (OS version, device model)</li>
-                <li>Usage analytics (feature usage frequency)</li>
+        <!-- Full Content Sections -->
+        <div class="policy-section">
+            <h2>1. Data Collection & Use</h2>
+            <ul>
+                <li>Process translation inputs in real-time (not stored)</li>
+                <li>Essential device information collected:
+                    <ul class="sub-list">
+                        <li>Device model & OS version</li>
+                        <li>Network connection type</li>
+                        <li>App usage statistics</li>
+                    </ul>
+                </li>
+                <li>Subscription data managed through Google Play</li>
             </ul>
-        </li>
-        <li><strong>Subscription Data:</strong>
-            <ul class="nested-list">
-                <li>Google Play purchase history</li>
-                <li>Subscription status (managed through Google Play)</li>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. Advertising</h2>
+            <ul>
+                <li>Google AdMob integration for non-intrusive ads</li>
+                <li>Collected ad data includes:
+                    <ul class="sub-list">
+                        <li>Advertising ID</li>
+                        <li>Anonymized IP address</li>
+                        <li>Click-through rates</li>
+                    </ul>
+                </li>
+                <li>Opt-out available in device settings</li>
             </ul>
-        </li>
-    </ul>
+        </div>
 
-    <h3>3. Advertising</h3>
-    <ul>
-        <li>Ad networks (Google AdMob) may collect:
-            <ul class="nested-list">
-                <li>Advertising ID</li>
-                <li>IP address (anonymized)</li>
-                <li>Interaction data (clicks, impressions)</li>
+        <div class="policy-section">
+            <h2>3. Subscriptions</h2>
+            <ul>
+                <li>Auto-renewing subscriptions via Google Play</li>
+                <li>Manage/cancel through Play Store account</li>
+                <li>No personal payment data stored</li>
             </ul>
-        </li>
-        <li>Users can opt-out of personalized ads through device settings</li>
-    </ul>
+        </div>
 
-    <h3>4. Data Sharing</h3>
-    <ul>
-        <li>We share data with:
-            <ul class="nested-list">
-                <li>Google Play Services (subscriptions)</li>
-                <li>Ad networks (for ad delivery)</li>
-                <li>Analytics providers (Firebase)</li>
+        <div class="policy-section">
+            <h2>4. Data Security</h2>
+            <ul>
+                <li>End-to-end encryption for translations</li>
+                <li>Regular security audits</li>
+                <li>Limited data retention (max 18 months)</li>
             </ul>
-        </li>
-        <li>No sale of personal information to third parties</li>
-    </ul>
+        </div>
 
-    <h3>5. User Consent</h3>
-    <ul>
-        <li>By using the App, you consent to:
-            <ul class="nested-list">
-                <li>Data collection as described</li>
-                <li>Ad serving and analytics</li>
-                <li>Subscription auto-renewal (managed through Google Play)</li>
+        <div class="policy-section">
+            <h2>5. User Rights</h2>
+            <ul>
+                <li>Request data access/deletion</li>
+                <li>Opt-out of analytics tracking</li>
+                <li>Withdraw consent via email</li>
             </ul>
-        </li>
-    </ul>
+        </div>
 
-    <h3>6. Subscription Terms</h3>
-    <ul>
-        <li>Auto-renewing subscriptions with:
-            <ul class="nested-list">
-                <li>Payment charged to Google Play account</li>
-                <li>Cancel anytime via Google Play Settings</li>
-                <li>No refunds for unused periods</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h3>7. Children's Privacy</h3>
-    <ul>
-        <li>App is not directed at children under 13</li>
-        <li>COPPA-compliant ad networks used</li>
-        <li>Parents may request data deletion</li>
-    </ul>
-
-    <div class="contact-section">
-        <h3>
-            <i class="fas fa-comments"></i>
-            Contact Us
-        </h3>
-        <p>For data requests or questions:</p>
-    
-    <div class="contact-section">
-        <h3>
-            <i class="fas fa-comments"></i>
-            Contact Us
-        </h3>
-        <p>For data requests or questions:</p>
-        <a href="mailto:fusionfixsupport@gmail.com">
-            <i class="fas fa-envelope"></i>
-            fusionfixsupport@gmail.com
-        </a>
-        <p style="margin-top:15px; color: #888;">Last Updated: [Insert Date]</p>
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>For privacy concerns or data requests:</p>
+            <a href="mailto:info.fusionfix@gmail.com" class="email-link">
+                info.fusionfix@gmail.com
+            </a>
+<!--             <p style="margin-top: 1rem; color: #888; font-size: 0.9rem;">
+                Last Updated: [Insert Date]
+            </p> -->
+        </div>
     </div>
-</div>
 </body>
 </html>
