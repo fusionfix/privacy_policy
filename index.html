@@ -3,85 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Privacy Policy - Multilingual AI Translate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Maintain previous styling */
+        :root {
+            --primary: #2563eb;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #334155;
         }
-        h2, h3 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        ul ul {
-            list-style-type: circle;
-        }
-        li {
-            margin-bottom: 10px;
-        }
+
         .container {
             max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
         }
-        .highlight {
+
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            font-size: 1.6rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--accent);
+        }
+
+        ul {
+            padding: 0;
+            margin-left: 25px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: var(--accent);
+            position: absolute;
+            left: -10px;
             font-weight: bold;
-            color: #e74c3c;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+        }
+
+        .contact-section h3 {
+            color: white;
+            border-left: none;
+            padding-left: 0;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-section a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-section a:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(5px);
+        }
+
+        .nested-list {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .nested-list li::before {
+            content: '◦';
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h2 class="wp-block-heading has-text-align-center has-large-font-size">Privacy Policy</h2>
+    <h2>Privacy Policy</h2>
 
-    <ul class="wp-block-list">
-        <li>This Privacy Policy explains how Harmony Nexus handles data in our apps. We are committed to protecting your privacy and being transparent about our practices.</li>
-
-        <li>We may update this policy occasionally. Please check back for any changes.</li>
+    <h3>1. Introduction</h3>
+    <ul>
+        <li>Multilingual AI Translate ("App") provides translation services through subscriptions and ad-supported access.</li>
+        <li>We comply with Google Play Developer Policies and all applicable privacy laws (GDPR, CCPA, COPPA).</li>
     </ul>
 
-    <h3 class="wp-block-heading">Data Collection</h3>
-    <ul class="wp-block-list">
-        <li>We do not collect any personal data through our apps.</li>
-    </ul>
-
-    <h3 class="wp-block-heading">Advertisements</h3>
-    <ul class="wp-block-list">
-        <li>Our apps contain third-party advertisements. These ad providers may collect and use certain data to provide relevant advertisements:
-            <ul>
-                <li>Device information</li>
-                <li>IP address</li>
-                <li>Ad interaction data</li>
-                <li>General location data</li>
+    <h3>2. Data Collection & Use</h3>
+    <ul>
+        <li><strong>Processed Data:</strong>
+            <ul class="nested-list">
+                <li>Translation inputs (processed in real-time, not stored)</li>
+                <li>Device information (OS version, device model)</li>
+                <li>Usage analytics (feature usage frequency)</li>
             </ul>
         </li>
-        <li>We do not have access to the data collected by ad providers. Please refer to their respective privacy policies for more information about their data practices.</li>
+        <li><strong>Subscription Data:</strong>
+            <ul class="nested-list">
+                <li>Google Play purchase history</li>
+                <li>Subscription status (managed through Google Play)</li>
+            </ul>
+        </li>
     </ul>
 
-    <h3 class="wp-block-heading">Children's Privacy</h3>
-    <ul class="wp-block-list">
-        <li>Our apps comply with applicable laws regarding children's privacy. We do not knowingly collect personal information from children.</li>
+    <h3>3. Advertising</h3>
+    <ul>
+        <li>Ad networks (Google AdMob) may collect:
+            <ul class="nested-list">
+                <li>Advertising ID</li>
+                <li>IP address (anonymized)</li>
+                <li>Interaction data (clicks, impressions)</li>
+            </ul>
+        </li>
+        <li>Users can opt-out of personalized ads through device settings</li>
     </ul>
 
-    <h3 class="wp-block-heading">Changes to This Policy</h3>
-    <ul class="wp-block-list">
-        <li>We reserve the right to update this privacy policy at any time. We will post any changes on this page.</li>
+    <h3>4. Data Sharing</h3>
+    <ul>
+        <li>We share data with:
+            <ul class="nested-list">
+                <li>Google Play Services (subscriptions)</li>
+                <li>Ad networks (for ad delivery)</li>
+                <li>Analytics providers (Firebase)</li>
+            </ul>
+        </li>
+        <li>No sale of personal information to third parties</li>
     </ul>
 
-    <h3 class="wp-block-heading">Contact Us</h3>
-    <ul class="wp-block-list">
-        <li>If you have any questions about this Privacy Policy, please contact us at: harmonynexuss@gmail.com</li>
+    <h3>5. User Consent</h3>
+    <ul>
+        <li>By using the App, you consent to:
+            <ul class="nested-list">
+                <li>Data collection as described</li>
+                <li>Ad serving and analytics</li>
+                <li>Subscription auto-renewal (managed through Google Play)</li>
+            </ul>
+        </li>
     </ul>
+
+    <h3>6. Subscription Terms</h3>
+    <ul>
+        <li>Auto-renewing subscriptions with:
+            <ul class="nested-list">
+                <li>Payment charged to Google Play account</li>
+                <li>Cancel anytime via Google Play Settings</li>
+                <li>No refunds for unused periods</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>7. Children's Privacy</h3>
+    <ul>
+        <li>App is not directed at children under 13</li>
+        <li>COPPA-compliant ad networks used</li>
+        <li>Parents may request data deletion</li>
+    </ul>
+
+    <div class="contact-section">
+        <h3>
+            <i class="fas fa-comments"></i>
+            Contact Us
+        </h3>
+        <p>For data requests or questions:</p>
+        <a href="mailto:info.fusionfix@gmail.com">
+            <i class="fas fa-envelope"></i>
+            info.fusionfix@gmail.com
+        </a>
+<!--        <p style="margin-top:15px;">Last Updated: [Insert Date]</p>-->
+    </div>
 </div>
 </body>
 </html>
